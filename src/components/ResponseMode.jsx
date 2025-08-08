@@ -20,23 +20,23 @@ function ResponseMode() {
   };
 
   const sendResponse = async (response) => {
-    try {
-      await axios.post("http://localhost:5000/api/response", { response });
-      setMessage(`You voted: ${response}`);
-      setResponseType(response);
-      if (response === "yes") {
-        setShowConfetti(true);
-        setParticleBurst(true);
-        setTimeout(() => {
-          setShowConfetti(false);
-          setParticleBurst(false);
-        }, 5000);
-      }
-    } catch (error) {
-      setMessage("Error sending response");
-      setResponseType("error");
+  try {
+    await axios.post(`${import.meta.env.VITE_API_URL}/api/response`, { response });
+    setMessage(`You voted: ${response}`);
+    setResponseType(response);
+    if (response === "yes") {
+      setShowConfetti(true);
+      setParticleBurst(true);
+      setTimeout(() => {
+        setShowConfetti(false);
+        setParticleBurst(false);
+      }, 5000);
     }
-  };
+  } catch (error) {
+    setMessage("Error sending response");
+    setResponseType("error");
+  }
+};
 
   // Navbar visibility and message reset on interaction
   useEffect(() => {

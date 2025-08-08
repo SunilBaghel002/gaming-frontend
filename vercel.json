@@ -16,6 +16,6 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://club-manager-3k6y.vercel.app"
+    "VITE_API_URL": "https://gaming-backend-beta.vercel.app"
   }
 }

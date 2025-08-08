@@ -60,7 +60,7 @@ function Stats() {
   useEffect(() => {
     // Fetch initial response counts
     axios
-      .get("http://localhost:5000/api/responses")
+      .get(`${import.meta.env.VITE_API_URL}/api/responses`)
       .then((res) => {
         const data = res.data.reduce(
           (acc, { _id, count }) => ({ ...acc, [_id]: count }),
