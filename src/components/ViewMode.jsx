@@ -222,7 +222,7 @@ function ViewMode() {
                     : crossAnimation
                 }
                 loop={false}
-                className="w-32 h-32 mb-4 animate-icon"
+                className="w-50 h-50 mb-4 animate-icon"
               />
               <span
                 className={`text-[20vw] font-extrabold font-poppins ${
