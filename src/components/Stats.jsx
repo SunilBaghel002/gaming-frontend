@@ -182,7 +182,7 @@ function Stats() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-300 via-purple-300 to-pink-300 animate-gradient-bg flex flex-col items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen  flex flex-col items-center justify-center p-4 relative overflow-hidden">
       <Particles
         id="tsparticles"
         init={particlesInit}

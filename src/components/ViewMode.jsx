@@ -146,43 +146,14 @@ function ViewMode() {
 
   return (
     <div
-      className={`min-h-screen flex items-center justify-center p-4 relative overflow-hidden transition-colors duration-500 ${
+      className={`min-h-screen flex items-center justify-center p-4 sm:p-6 relative overflow-hidden transition-colors duration-500 ${
         bgState === "yes"
           ? "bg-green-500"
           : bgState === "no"
           ? "bg-red-500 animate-shake"
-          : "bg-gradient-to-br from-blue-300 via-purple-300 to-pink-300 animate-gradient-bg"
+          : "bg-gray-900"
       }`}
     >
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          particles: {
-            number: {
-              value: particleBurst ? 200 : 100,
-              density: { enable: true, value_area: 800 },
-            },
-            color: { value: ["#34D399", "#EF4444", "#ffffff", "#8B5CF6"] },
-            shape: { type: ["circle", "star"], multiple: true },
-            opacity: { value: 0.6, random: true },
-            size: { value: particleBurst ? 7 : 5, random: true },
-            move: {
-              enable: true,
-              speed: particleBurst ? 3 : 1.5,
-              direction: "none",
-              random: true,
-            },
-          },
-          interactivity: {
-            events: {
-              onhover: { enable: true, mode: "bubble" },
-              onclick: { enable: true, mode: "push" },
-            },
-          },
-        }}
-        className="absolute inset-0"
-      />
       {showConfetti && (
         <Confetti
           width={window.innerWidth}

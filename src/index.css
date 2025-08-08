@@ -11,43 +11,11 @@ body {
   background-color: #1a1a1a;
 }
 
-/* Animated gradient background */
-@keyframes gradient-bg {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.animate-gradient-bg {
-  background: linear-gradient(
-    45deg,
-    #4b6cb7,
-    #7c3aed,
-    #db2777,
-    #14b8a6,
-    #4b6cb7
-  );
-  background-size: 400% 400%;
-  animation: gradient-bg 6s ease-in-out infinite;
-}
-
 /* Floating animation */
 @keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
 }
 
 .animate-float {
@@ -56,25 +24,10 @@ body {
 
 /* Shake animation for "No" */
 @keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-15px);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(15px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  0% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
+  20%, 40%, 60%, 80% { transform: translateX(15px); }
+  100% { transform: translateX(0); }
 }
 
 .animate-shake {
@@ -83,18 +36,9 @@ body {
 
 /* Zoom animation for "Yes" text */
 @keyframes text-zoom {
-  0% {
-    opacity: 0;
-    transform: scale(0.2) rotate(-10deg);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.5) rotate(0deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1.3) rotate(10deg);
-  }
+  0% { opacity: 0; transform: scale(0.2) rotate(-10deg); }
+  50% { opacity: 1; transform: scale(1.5) rotate(0deg); }
+  100% { opacity: 1; transform: scale(1.3) rotate(10deg); }
 }
 
 .animate-text-zoom {
@@ -103,15 +47,9 @@ body {
 
 /* Pulse animation for "No" text and buttons */
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
 }
 
 .animate-pulse {
@@ -124,14 +62,8 @@ body {
 
 /* Result message animation */
 @keyframes result {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 .animate-result {
@@ -140,12 +72,8 @@ body {
 
 /* Progress bar and bar graph animation */
 @keyframes progress {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: var(--progress-width);
-  }
+  0% { width: 0%; }
+  100% { width: var(--progress-width); }
 }
 
 .animate-progress {
@@ -153,12 +81,8 @@ body {
 }
 
 @keyframes bar {
-  0% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-  }
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
 }
 
 .animate-bar {
@@ -168,14 +92,8 @@ body {
 
 /* Navbar show/hide animations */
 @keyframes nav-show {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .animate-nav-show {
@@ -183,14 +101,8 @@ body {
 }
 
 @keyframes nav-hide {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
 }
 
 .animate-nav-hide {
@@ -199,18 +111,9 @@ body {
 
 /* Lottie icon animation */
 @keyframes icon {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 .animate-icon {
@@ -219,13 +122,8 @@ body {
 
 /* Bounce animation for titles */
 @keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
 .animate-bounce {
@@ -234,14 +132,8 @@ body {
 
 /* Ripple effect for buttons */
 @keyframes ripple {
-  0% {
-    transform: scale(0);
-    opacity: 0.8;
-  }
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
+  0% { transform: scale(0); opacity: 0.8; }
+  100% { transform: scale(2.5); opacity: 0; }
 }
 
 .animate-ripple {
@@ -250,21 +142,11 @@ body {
 
 /* Shake animation for "No" button */
 @keyframes shake-button {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-10px);
-  }
-  50% {
-    transform: translateX(10px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }
 
 .animate-shake-button {
@@ -273,13 +155,11 @@ body {
 
 /* Glow effects */
 .glow-text {
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
-    0 0 10px rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 .glow-green {
-  text-shadow: 0 0 40px rgba(16, 185, 129, 0.9),
-    0 0 60px rgba(16, 185, 129, 0.7);
+  text-shadow: 0 0 40px rgba(16, 185, 129, 0.9), 0 0 60px rgba(16, 185, 129, 0.7);
 }
 
 .glow-red {
@@ -288,14 +168,8 @@ body {
 
 /* Counter animation */
 @keyframes counter {
-  0% {
-    transform: scale(1.6);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+  0% { transform: scale(1.6); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .animate-counter {
@@ -303,17 +177,17 @@ body {
   animation: counter 0.3s ease-in-out;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 640px) {
   .choice {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 1.5rem;
   }
   .first-btn {
-    margin-right: 0px !important;
+    margin-right: 0 !important;
   }
   .animate-bounce {
-    animation-duration: 0s;
+    animation: none;
   }
 }
